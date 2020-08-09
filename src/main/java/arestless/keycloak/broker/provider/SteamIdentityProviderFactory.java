@@ -48,4 +48,10 @@ public class SteamIdentityProviderFactory implements SocialIdentityProviderFacto
     public String getId() {
         return "steam";
     }
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public SteamIdentityProviderConfig createConfig() {
+		return new SteamIdentityProviderConfig();
+	}
 }
